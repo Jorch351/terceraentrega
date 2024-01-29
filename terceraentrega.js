@@ -2,9 +2,9 @@ let usuariosGuardados = [];
 let botoningresa = document.querySelector("#iniciarSesion");
 let botonguarda = document.querySelector("#guardarUsuario");
 
+botoningresa.addEventListener("click", ()=>{
+    
 
-    function iniciarSesion() {
-        // Implementa lógica de inicio de sesión aquí si es necesario
         const contenedor = document.getElementById("contenedor");
         contenedor.innerHTML =`
         <div>
@@ -33,10 +33,22 @@ let botonguarda = document.querySelector("#guardarUsuario");
             </section>
             </div>
         `
-    }
+    
+})
+    
+botonguarda.addEventListener("click", ()=>{
+    
 
+    const contenedor = document.getElementById("contenedor");
+    contenedor.innerHTML =`
+    <div>
+    <input type="text" id="usuario1" placeholder="Usuario">
+    <input type="password" id="password1" placeholder="Contraseña">
+        </div>
+    `
 
-/*
+})
+
 
 function guardarUsuario() {
     // Obtener los valores del usuario y la contraseña
@@ -64,4 +76,4 @@ function redirigirAotraPagina() {
     // Implementa la redirección a otra página aquí
     // Por ejemplo, redirigir a la página "otraPagina.html"
     window.location.href = "otraPagina.html";
-}*/
+}
