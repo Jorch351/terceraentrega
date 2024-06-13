@@ -16,7 +16,7 @@ div {
     margin: auto;
 }
 
-.product {
+.producto {
     background-color: #fff;
     padding: 20px;
     margin: 15px;
@@ -26,7 +26,7 @@ div {
     transition: transform 0.3s ease;
 }
 
-.product:hover {
+.producto:hover {
     transform: scale(1.05);
 }
 
@@ -49,7 +49,7 @@ p {
     margin-bottom: 15px;
 }
 
-.price {
+.precio {
     color: #4caf50;
     font-size: 1.2em;
     font-weight: bold;
