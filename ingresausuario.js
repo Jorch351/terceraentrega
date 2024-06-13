@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const products = document.querySelectorAll('.producto');
+    const productos = document.querySelectorAll('.producto');
 
-    products.forEach(product => {
-        const button = product.querySelector('button');
+    productos.forEach(product => {
+        const button = producto.querySelector('button');
         button.addEventListener('click', function() {
-            const name = product.querySelector('h2').innerText;
-            const price = product.querySelector('.precio').innerText;
+            const name = producto.querySelector('h2').innerText;
+            const price = producto.querySelector('.precio').innerText;
             saveProduct(name, price);
         });
     });
 });
 
-function saveProduct(name, price) {
+function guardarProducto(name, price) {
     const productData = {
         name: name,
         price: price
