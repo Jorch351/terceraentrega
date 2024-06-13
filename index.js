@@ -1,10 +1,16 @@
-let botoningresa = document.querySelector("#iniciarSesion");
-let botonguarda = document.querySelector("#guardarUsuario");
+document.addEventListener("DOMContentLoaded", () => {
+    let botoningresa = document.querySelector("#iniciarSesion");
+    let botonguarda = document.querySelector("#guardarUsuario");
 
-botoningresa.addEventListener("click", ()=>{
-    window.location.href = "ingresausuario.html";
-})
+    if (botoningresa) {
+        botoningresa.addEventListener("click", () => {
+            window.location.href = "ingresausuario.html";
+        });
+    }
 
-botonguarda.addEventListener("click", ()=>{
-    window.location.href = "guardausuario.html";
-})
+    if (botonguarda) {
+        botonguarda.addEventListener("click", () => {
+            window.location.href = "guardausuario.html";
+        });
+    }
+});
